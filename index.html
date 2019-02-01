@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .fieldset{
+            margin : 0 auto;
+            width: 30%;
+            max-width: 380px;
+            min-width: 100px;
+        }
+
+        .btn{
+            text-align : right; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fieldset">
+        <fieldset>
+            <legend>C'est ici</legend>
+            <table>
+                <tr>
+                    <td>Entrez votre nom</td>
+                    <td>
+                        <input id="name" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Affichage</td>
+                    <td>
+                        <div>
+                            <input id="popup" type="radio" name="print" value="Popup" checked>
+                            Popup
+                        </div>
+
+                        <div>
+                            <input id="page" type="radio" name="print" value="Page">
+                            Page
+                        </div>
+
+                        <div>
+                            <input id="console" type="radio" name="print" value="Console">
+                            Console
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="btn" onclick="sayHello()">Valider</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+
+        <h2 id=inner></h2>
+    </div>
+
+    <script src="js/hello.js" type="text/javascript"></script>
+    
+</body>
+</html>
