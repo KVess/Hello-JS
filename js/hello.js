@@ -23,6 +23,7 @@ function sayHello(){
             h2Print.innerText = "Hello " + input.value;
         }
     } else {
+        h2Print.innerText = "";
         alert("Entrez votre nom SVP!");
     }
 }
