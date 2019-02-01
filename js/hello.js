@@ -7,7 +7,7 @@ function sayHello(){
     var isPage = document.getElementById('page').checked
     var isConsole = document.getElementById('console').checked
 
-    console.log(h2Print);
+    //console.log(h2Print);
     if(input.value !== ""){
         if(isPopup){
             h2Print.innerText = "";
@@ -22,7 +22,8 @@ function sayHello(){
         if(isPage){
             h2Print.innerText = "Hello " + input.value;
         }
-    } else {
+    } 
+    else {
         h2Print.innerText = "";
         alert("Entrez votre nom SVP!");
     }
