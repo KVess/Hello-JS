@@ -22,5 +22,7 @@ function sayHello(){
         if(isPage){
             h2Print.innerText = "Hello " + input.value;
         }
+    } else {
+        alert("Entrez votre nom SVP!");
     }
 }
