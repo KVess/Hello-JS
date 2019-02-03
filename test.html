@@ -24,15 +24,50 @@
         });*/
 
         $(document).ready(function(){
-            $("#cover").click(function(){
-                $("#panel").slideToggle();
-            })
+            // $("#cover").click(function(){
+            //     $("#panel").slideToggle();
+            // })
+
+            var acc = $(".acc");
+
+            console.log(acc);
+
+            for(i = 0; i < acc.length; i++ ){
+                console.log(acc[i]);
+                $(acc[i]).click(function(){
+                    // $(acc[i]).next().slideToggle();
+                    $(this).next().slideToggle();
+                });
+            }
         });
 
     </script>
 
     <style>
-        #cover, #panel{
+        /* #cover, #panel{
+            padding : 5px;
+            text-align : center;
+            background-color : aquamarine;
+            border: solid 1px #FFF;
+            width: 300px;
+        } */
+
+        #tabs{
+
+            margin: auto;
+            /* padding-left: 500px; */
+            width: 20%;
+        }
+
+        /* .acc{
+            padding : 5px;
+            text-align : center;
+            background-color : aquamarine;
+            border: solid 1px #FFF;
+            width: 300px;
+        } */
+
+        .acc-style div{
             padding : 5px;
             text-align : center;
             background-color : aquamarine;
@@ -40,11 +75,16 @@
             width: 300px;
         }
 
-        #tabs{
+        .white{
+            background-color: #b2bec3 !important;
+        }
 
-            /*margin: auto;*/
-            padding-left: 500px;
-            width: 25px;
+        .green{
+            background-color: #55efc4 !important;
+        }
+
+        .purple{
+            background-color: #a29bfe !important; 
         }
     </style>
 
@@ -60,11 +100,44 @@
 
     <button id="show">show</button>-->
 
-    <div id="tabs">
-        <div id="cover">
-            Clique ici pour m'ouvrir
+    <div id="tabs" class="acc-style">
+        <div class="acc" >
+            Clique ici pour m'ouvrir 1
         </div>
-        <div id="panel">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa modi obcaecati eius laboriosam sint
+            accusamus, odit corrupti, rerum, fuga vel delectus assumenda ut at. Id voluptas dolore architecto sed
+            officia?Ea quis nostrum necessitatibus, adipisci saepe libero veniam numquam deleniti officia cupiditate!
+            Expedita quo culpa itaque repellendus quisquam autem, molestias saepe laborum perferendis quam placeat
+            omnis at? Eum, nisi veniam!
+        </div>
+
+        <div class="white acc">
+            Clique ici pour m'ouvrir 2
+        </div>
+        <div class="white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa modi obcaecati eius laboriosam sint
+            accusamus, odit corrupti, rerum, fuga vel delectus assumenda ut at. Id voluptas dolore architecto sed
+            officia?Ea quis nostrum necessitatibus, adipisci saepe libero veniam numquam deleniti officia cupiditate!
+            Expedita quo culpa itaque repellendus quisquam autem, molestias saepe laborum perferendis quam placeat
+            omnis at? Eum, nisi veniam!
+        </div>
+
+        <div class="green acc">
+            Clique ici pour m'ouvrir 3
+        </div>
+        <div class="green">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa modi obcaecati eius laboriosam sint
+            accusamus, odit corrupti, rerum, fuga vel delectus assumenda ut at. Id voluptas dolore architecto sed
+            officia?Ea quis nostrum necessitatibus, adipisci saepe libero veniam numquam deleniti officia cupiditate!
+            Expedita quo culpa itaque repellendus quisquam autem, molestias saepe laborum perferendis quam placeat
+            omnis at? Eum, nisi veniam!
+        </div>
+
+        <div class="purple acc">
+            Clique ici pour m'ouvrir 4
+        </div>
+        <div class="purple">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa modi obcaecati eius laboriosam sint
             accusamus, odit corrupti, rerum, fuga vel delectus assumenda ut at. Id voluptas dolore architecto sed
             officia?Ea quis nostrum necessitatibus, adipisci saepe libero veniam numquam deleniti officia cupiditate!
